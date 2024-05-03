@@ -1,0 +1,44 @@
+.stepByStep--section {
+  padding: 0 2rem;
+  margin: 4rem 0;
+}
+.stepByStep--section ol {
+  font-size: 1.25rem;
+  color: var(--black);
+}
+.stepByStep--section ol li {
+  margin-top: 4rem;
+}
+.stepByStep--section .stepByStep--elementContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.stepByStep--section ol li img {
+  border: 2px solid var(--dark-blue);
+  aspect-ratio: 1200/600;
+  width: 100%;
+}
+.stepByStep--section ol li p {
+  width: 100%;
+  font-size: 1rem;
+}
+.stepByStep--section ol li p strong {
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 820px) {
+  .stepByStep--section .stepByStep--elementContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .stepByStep--section ol {
+    font-size: 1.5rem;
+  }
+  .stepByStep--section ol li p {
+    font-size: 1.25rem;
+  }
+  .stepByStep--section ol li p strong {
+    font-size: 1.5rem;
+  }
+}
